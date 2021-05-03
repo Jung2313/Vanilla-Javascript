@@ -72,4 +72,14 @@ $textShadow2: 2px 2px 0 $colorShadow,
 
     }
 
+
+}
+
+@media (max-width:417px){
+    .container{
+             #h2 { 
+                 text-align: center;
+             }    
+    }
+
 }

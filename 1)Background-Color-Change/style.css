@@ -43,4 +43,10 @@
   text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
 }
 
+@media (max-width: 417px) {
+  .container #h2 {
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
