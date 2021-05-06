@@ -14,6 +14,11 @@ increase.addEventListener('click',()=>{
 reset.addEventListener('click',()=>{
         vacio=0;
         valor.textContent=0;
+        if(vacio==0){
+            valor.style.color="rgb(29, 26, 32)";
+        }
+        
+
 })
 
 decrease.addEventListener('click',()=>{
