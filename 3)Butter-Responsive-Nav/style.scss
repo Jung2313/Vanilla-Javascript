@@ -136,8 +136,8 @@ body{
         
         position: absolute;
         right: 0;
-        height: 50vh;
-        top: 14vh;
+        height: 40vh;
+        top: 11vh;
         background-color: #fedc00;
         flex-direction: column;
         align-items: center;
@@ -186,6 +186,14 @@ body{
 }
 @media (max-width: 500px){
     .container header .nav-links li a {
-        font-size: 21px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width:400px){
+    .container{
+        footer{
+            bottom: -4rem;
+        }
     }
 }
