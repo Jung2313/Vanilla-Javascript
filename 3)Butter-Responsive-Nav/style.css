@@ -152,7 +152,7 @@ body {
 }
 @media (max-width: 400px) {
   .container footer {
-    bottom: -4rem;
+    bottom: -5rem;
   }
 }
 
