@@ -1,0 +1,99 @@
+$fontFamily:'Sunshiney', cursive;
+$colorWhite:#fff;
+$colorSemiWhite:#E6E6FA;
+$colorGreen:#405923;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    font-family: $fontFamily;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/landscape.jpg);
+    background-size: 190%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    &.content .background-modal{
+        visibility: visible;
+        z-index: 10;
+    } 
+    .background-modal{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(7, 55, 90, 0.5);
+        visibility: hidden;
+        z-index: -10;
+        }
+    &__modal{
+        padding-top: 4rem;
+        text-align: center;
+        width: 27rem;
+        height: 15rem;
+        background-color: $colorSemiWhite;
+        border-radius: 5px;
+        letter-spacing: 5px;
+        &.context .modal{
+            display: block;
+        }
+        .modal{
+            display: none;
+            position: absolute;
+            z-index: 10;
+            height: 10rem;
+            width: 27rem;
+            padding-top: 3rem;
+            font-size: 2rem;
+            background-color: $colorSemiWhite;
+            margin-top: -17px;
+            .fas{
+                right: 0;
+                top: 0;
+                position: absolute;
+                color: #A52A2A;
+                cursor: pointer;
+            }
+        }
+      
+        h2{
+            margin-bottom: 2rem;
+            font-size: 3rem;
+        }
+        button{
+            background-color: $colorGreen;
+            color: $colorWhite;
+            outline: none;
+            border: none;
+            height:2rem;
+            width: 7rem;
+            font-size: 1.4rem;
+            border-radius: 5px;
+            font-family: $fontFamily;
+            &:hover{
+                border:2px solid $colorGreen;
+                background-color: $colorSemiWhite;
+                color: $colorGreen;
+                cursor: pointer;
+
+            }
+        }  
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+        color: $colorWhite;
+        font-weight: bolder;
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+}
